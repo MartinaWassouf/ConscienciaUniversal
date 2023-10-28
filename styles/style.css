@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+   
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata:wght@500&family=Playfair+Display:ital@1&family=Zeyada&display=swap');
+ 
+
+
+body{
+    font-family: 'Zeyada', cursive;
+    margin: 0;
+    text-align: center;
+    min-height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: rgb(180, 118, 238);
+    align-items: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+
+nav a:hover{
+    color: white;
+}
+
+.logo{
+   display: flex;
+   align-items: center;
+   font-size: 30px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.logo img{
+    height: 80px;
+    margin-right: 10px;
+}
+
+
+
+.bienvenida{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Zeyada', cursive;
+    
+}
+
+.imagen-inicio{
+    height: 400px;
+  
+}
+
+footer{
+    text-align: center;
+    background-image: url("../img/fondo\ violeta.jpg");
+    font-family: 'Inconsolata', monospace;
+    padding: 20px;
+}
+
+.formulariocontacto{
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.autoconocimiento{
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Zeyada', cursive;
+}
+
+h2{
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Zeyada', cursive;
+    background-image: url("../img/fondo\ violeta.jpg");
+}
+
+.recomendaciones{
+    margin: 20px;
+    text-align: center;
+    font-family: 'Zeyada', cursive;
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+h3{
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Zeyada', cursive;
+    background-color: blueviolet;
+}
+
+.cabeceranumerologia{
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Zeyada', cursive;
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgb(196, 172, 218);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    gap: 10px
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+.navbar{
+    grid-area: navbar;
+}
+
+.aside{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+.caja{
+    border: 1px rgb(124, 124, 223);
+
+    color: black;
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+
+.cajacontacto{
+    border: 1px rgb(145, 145, 228);
+    background-color: rgb(196, 91, 228);
+    color: black;
+    font-weight: bold;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+    align-content: center;
+}
+
+.flex-container{
+    display: flex;
+    padding: 20px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    
+    
+}
+
+
+
+@media(min-width:480px){
+    .grid-container{
+        grid-template-columns: 300px auto;
+        grid-template-areas: 
+        "navbar navbar"
+        "sidebar main"
+        "footer footer"
+        ;
+    }
+    
+}@media (max-whidth:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
