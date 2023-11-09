@@ -1,30 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-   
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata:wght@500&family=Playfair+Display:ital@1&family=Zeyada&display=swap');
- 
 
 
 body{
-    font-family: 'Zeyada', cursive;
+    font-family: fantasy;
     margin: 0;
     text-align: center;
     min-height: 100%;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    min-height: 100px;
-    background-color: rgb(180, 118, 238);
-    align-items: center;
-    padding: 10px;
-}
 
 a{
     text-decoration: none;
@@ -60,19 +42,18 @@ nav a:hover{
 .bienvenida{
     margin: 20px;
     font-size: 20px;
-    font-family: 'Zeyada', cursive;
+    font-family: Merriweather;
     
 }
 
-.imagen-inicio{
-    height: 400px;
-  
-}
+.imageninicio{
+    width: 75%   
+    }
 
 footer{
     text-align: center;
     background-image: url("../img/fondo\ violeta.jpg");
-    font-family: 'Inconsolata', monospace;
+    font-family: Merriweather;
     padding: 20px;
 }
 
@@ -85,21 +66,21 @@ footer{
     margin: 20px;
     font-size: 20px;
     text-align: center;
-    font-family: 'Zeyada', cursive;
+    font-family: Merriweather;
 }
 
 h2{
     margin: 20px;
     font-size: 25px;
     text-align: center;
-    font-family: 'Zeyada', cursive;
+    font-family: Merriweather;
     background-image: url("../img/fondo\ violeta.jpg");
 }
 
 .recomendaciones{
     margin: 20px;
     text-align: center;
-    font-family: 'Zeyada', cursive;
+    font-family: Merriweather;
     padding: 30px;
     font-size: 20px;
 
@@ -113,7 +94,7 @@ h3{
     margin: 20px;
     font-size: 20px;
     text-align: center;
-    font-family: 'Zeyada', cursive;
+    font-family: Merriweather;
     background-color: blueviolet;
 }
 
@@ -121,7 +102,7 @@ h3{
     margin: 20px;
     font-size: 20px;
     text-align: center;
-    font-family: 'Zeyada', cursive;
+    font-family: Merriweather;
 }
 
 .grid-container > * {
@@ -191,19 +172,27 @@ h3{
     align-content: center;
     
     
+    
 }
 
-
+.imagenes{
+    width: 75vw;
+    max-width: 500px;
+    min-width: 320px;
+    margin: auto;
+}
 
 @media(min-width:480px){
     .grid-container{
         grid-template-columns: 300px auto;
+        flex-direction: column;
         grid-template-areas: 
         "navbar navbar"
         "sidebar main"
         "footer footer"
         ;
     }
+    
     
 }@media (max-whidth:700px){
     header{
@@ -212,4 +201,5 @@ h3{
     nav{
         padding: 10px 0px;
     }
+    
 }
