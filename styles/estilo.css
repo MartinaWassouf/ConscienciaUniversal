@@ -1,18 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata:wght@500&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital@1&family=Zeyada&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-*::-moz-selection {
-  background-color: black;
-  color: rgb(180, 118, 238);
-}
-*::selection {
-  background-color: black;
-  color: rgb(180, 118, 238);
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -20,4 +5,283 @@ header {
   background-color: rgb(180, 118, 238);
   align-items: center;
   padding: 10px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+nav a:hover {
+  color: white;
+}
+
+.logo {
+  animation: swirl-in-fwd 0.6s ease-out both;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.logo img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  background-color: rgb(180, 118, 238);
+  align-items: center;
+  padding: 10px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+nav a:hover {
+  color: white;
+}
+
+.logo {
+  animation: swirl-in-fwd 0.6s ease-out both;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.logo img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+.bienvenida {
+  margin: 20px;
+  font-size: 20px;
+  font-family: Merriweather;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "navbar" "main" "sidebar" "footer";
+}
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgb(196, 172, 218);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  gap: 10px;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.aside {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.flex-container {
+  display: flex;
+  padding: 20px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+@media (min-width: 480px) {
+  .grid-container {
+    grid-template-columns: 300px auto;
+    flex-direction: column;
+    grid-template-areas: "navbar navbar" "sidebar main" "footer footer";
+  }
+}
+@media (min-width: 480px) and (max-whidth: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
+.autoconocimiento {
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Merriweather;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-family: Merriweather;
+  background-image: url("../img/fondo violeta.jpg");
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.recomendaciones {
+  margin: 20px;
+  text-align: center;
+  font-family: Merriweather;
+  padding: 30px;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Merriweather;
+  background-color: blueviolet;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cabeceranumerologia {
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Merriweather;
+}
+
+.formulariocontacto {
+  background-color: blueviolet;
+  text-align: center;
+  font-family: Merriweather;
+}
+
+.cajacontacto {
+  border: 1px rgb(145, 145, 228);
+  background-color: rgb(196, 91, 228);
+  color: black;
+  font-weight: bold;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  margin: 5px;
+  align-content: center;
+  font-family: Merriweather;
+}
+
+body {
+  font-family: Merriweather;
+  margin: 0;
+  text-align: center;
+  min-height: 100%;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+footer {
+  text-align: center;
+  background-image: url("../img/fondo violeta.jpg");
+  font-family: Merriweather;
+  padding: 20px;
+}
+
+.caja {
+  border: 1px rgb(124, 124, 223);
+  color: black;
+  width: 250px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  align-content: center;
+  font-family: Merriweather;
+}
+
+.imagenes {
+  width: 75vw;
+  max-width: 500px;
+  min-width: 320px;
+  margin: auto;
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: black;
+  color: violet;
+  font-family: Merriweather;
+}
+*::selection {
+  background-color: black;
+  color: violet;
+  font-family: Merriweather;
 }/*# sourceMappingURL=estilo.css.map */

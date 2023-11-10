@@ -1,3 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata:wght@500&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital@1&family=Zeyada&display=swap');
+body {
+  font-family: Merriweather;
+  margin: 0;
+  text-align: center;
+  min-height: 100%;
+  -webkit-animation:color-change-2x 2s linear infinite alternate both; 
+  animation:color-change-2x 2s linear infinite alternate both;
+}
 
-$mainColor: rgb(180, 118, 238);
+footer {
+    text-align: center;
+    background-image: url("../img/fondo\ violeta.jpg");
+    font-family: Merriweather;
+    padding: 20px;
+  }
+
+  .caja{
+    border: 1px rgb(124, 124, 223);
+    color: black;
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+    font-family: Merriweather;
+}
+
+.imagenes{
+  width: 75vw;
+  max-width: 500px;
+  min-width: 320px;
+  margin: auto;
+}
+
+
+
+ @-webkit-keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}
